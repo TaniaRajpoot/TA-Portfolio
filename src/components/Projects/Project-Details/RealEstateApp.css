@@ -12,7 +12,7 @@
   font-weight: bold;
   margin-bottom: 2rem;
   text-align: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -27,15 +27,15 @@
   font-weight: 600;
   margin-bottom: 1rem;
   color: #374151;
- 
-
+  border-bottom: 2px solid #10b981;
+  padding-bottom: 0.5rem;
 }
 
 .ninja-section h3 {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
-  color: #4b5563;
+  color: #047857;
 }
 
 .ninja-section p {
@@ -49,15 +49,15 @@
   height: 400px;
   border-radius: 0.75rem;
   object-fit: contain;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e5e7eb;
-  background: #f9fafb;
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.15);
+  border: 1px solid #d1fae5;
+  background: #f0fdf4;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .ninja-img:hover {
   transform: scale(1.02);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 35px rgba(16, 185, 129, 0.25);
 }
 
 .ninja-video {
@@ -66,14 +66,14 @@
   border-radius: 0.75rem;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.15);
+  border: 1px solid #d1fae5;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .ninja-video:hover {
   transform: scale(1.02);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 35px rgba(16, 185, 129, 0.25);
 }
 
 .ninja-video iframe {
@@ -104,7 +104,7 @@
   content: none;
   position: absolute;
   left: 0;
-  color: #3b82f6;
+  color: #10b981;
   font-weight: bold;
   font-size: 1.1rem;
 }
@@ -115,20 +115,21 @@
   color: #f59e0b;
 }
 
-/* Special styling for security features */
+/* Special styling for API endpoints */
 .ninja-section:nth-of-type(6) .ninja-list li::before {
   content: none;
+  color: #3b82f6;
 }
 
-/* Special styling for API endpoints */
+/* Special styling for security features */
 .ninja-section:nth-of-type(7) .ninja-list li::before {
   content: none;
-  color: #10b981;
+  color: #ef4444;
 }
 
 /* Special styling for roadmap items */
 .ninja-section:nth-of-type(8) .ninja-list li::before {
-  content: none;
+  content: "";
   color: #8b5cf6;
 }
 
@@ -153,7 +154,7 @@
 }
 
 .ninja-link-list a {
-  color: #2563eb;
+  color: #059669;
   text-decoration: none;
   font-weight: 500;
   border-bottom: 2px solid transparent;
@@ -161,8 +162,8 @@
 }
 
 .ninja-link-list a:hover {
-  color: #1d4ed8;
-  border-bottom-color: #3b82f6;
+  color: #047857;
+  border-bottom-color: #10b981;
   text-decoration: none;
 }
 
@@ -171,9 +172,9 @@
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 1rem;
-  border: 2px solid #3b82f6;
+  border: 2px solid #10b981;
   border-radius: 0.5rem;
-  color: #3b82f6;
+  color: #10b981;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -181,14 +182,14 @@
 }
 
 .ninja-container > a:hover {
-  background-color: #3b82f6;
+  background-color: #10b981;
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
 }
 
 .ninja-container > a::before {
-  content: "";
+  content: "←";
   margin-right: 0.5rem;
   font-size: 1.1rem;
 }
@@ -199,85 +200,125 @@
 }
 
 .ninja-features > div > div {
-  background: #f8fafc;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
   padding: 1.5rem;
   border-radius: 0.75rem;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #d1fae5;
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.ninja-features > div > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #10b981, #059669);
 }
 
 .ninja-features > div > div:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-color: #3b82f6;
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.2);
+  border-color: #10b981;
 }
 
-.ninja-features > div > div:first-child {
-  border-left: 4px solid #10b981;
+.ninja-features > div > div:first-child::before {
+  background: linear-gradient(90deg, #10b981, #34d399);
 }
 
-.ninja-features > div > div:last-child {
-  border-left: 4px solid #f59e0b;
+.ninja-features > div > div:last-child::before {
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
 }
 
 /* Dark theme styles */
 .dark {
-  background-color: #111827;
-  color: #f9fafb;
+  background-color: #0f172a;
+  color: #f1f5f9;
 }
 
 .dark .ninja-title {
-  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #059669 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .dark .ninja-section h2 {
-  color: #f3f4f6;
-
+  color: #f1f5f9;
+  border-bottom-color: #34d399;
 }
 
 .dark .ninja-section h3 {
-  color: #e5e7eb;
+  color: #34d399;
 }
 
 .dark .ninja-img {
-  background: #1f2937;
-  border-color: #374151;
+  background: #1e293b;
+  border-color: #475569;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .dark .ninja-video {
-  border-color: #374151;
+  border-color: #475569;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .dark .ninja-link-list a {
-  color: #93c5fd;
+  color: #34d399;
 }
 
 .dark .ninja-link-list a:hover {
-  color: #dbeafe;
-  border-bottom-color: #60a5fa;
+  color: #6ee7b7;
+  border-bottom-color: #34d399;
 }
 
 .dark .ninja-container > a {
-  border-color: #60a5fa;
-  color: #60a5fa;
+  border-color: #34d399;
+  color: #34d399;
 }
 
 .dark .ninja-container > a:hover {
-  background-color: #60a5fa;
-  color: #1f2937;
+  background-color: #34d399;
+  color: #0f172a;
 }
 
 .dark .ninja-features > div > div {
-  background: #1f2937;
-  border-color: #374151;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-color: #475569;
 }
 
 .dark .ninja-features > div > div:hover {
-  border-color: #60a5fa;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border-color: #34d399;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Enhanced hover effects for images */
+.ninja-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.ninja-img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(16, 185, 129, 0.1),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.ninja-img:hover::after {
+  left: 100%;
 }
 
 /* Responsive design */
@@ -386,11 +427,51 @@ html {
 /* Focus states for accessibility */
 .ninja-container > a:focus,
 .ninja-link-list a:focus {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid #10b981;
   outline-offset: 2px;
 }
 
 .dark .ninja-container > a:focus,
 .dark .ninja-link-list a:focus {
-  outline-color: #60a5fa;
+  outline-color: #34d399;
+}
+
+/* Special animations for property-related elements */
+.ninja-section:nth-of-type(3) .ninja-list li,
+.ninja-section:nth-of-type(4) .ninja-list li {
+  animation: slideInLeft 0.5s ease-out;
+  animation-delay: calc(0.1s * var(--animation-order, 0));
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Property card-like styling for feature boxes */
+.ninja-features > div > div {
+  box-shadow: 0 4px 6px rgba(16, 185, 129, 0.1);
+  /* backdrop-filter: blur(10px); */
+}
+
+.ninja-features > div > div h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ninja-features > div > div:first-child h3::before {
+  content: none;
+  font-size: 1.2rem;
+}
+
+.ninja-features > div > div:last-child h3::before {
+  content: none;
+  font-size: 1.2rem;
 }

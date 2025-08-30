@@ -12,7 +12,10 @@ import Home from './components/Home/Home'
 import NinjaCaseStudy from './components/Projects/Project-Details/NinjaCode'
 import MartCaseStudy from './components/Projects/Project-Details/MulMart'
 import './App.css'
-import AuthCaseStudy from './components/Projects/Project-Details/AuthApp'
+import AuthCaseStudy from './components/Projects/Project-Details/AuthApp'   
+import GreenCart from './components/Projects/Project-Details/GreenCart'   
+import Prescripto from './components/Projects/Project-Details/Prescripto'   
+import RealEstateCaseStudy from './components/Projects/Project-Details/RealEstateAppCaseStudy'
 
 const App = () => {
   const [{ themeName }] = useContext(ThemeContext)
@@ -41,6 +44,9 @@ const App = () => {
           <Route path="/Project-Details/ninjacode" element={<NinjaCaseStudy />} />
           <Route path="/Project-Details/MulMart" element={<MartCaseStudy />} />
           <Route path="/Project-Details/AuthApp" element={<AuthCaseStudy />} />
+          <Route path="/Project-Details/RealEstateAppCaseStudy" element={<RealEstateCaseStudy />} />
+          <Route path="/Project-Details/GreenCart" element={<GreenCart />} />
+          <Route path="/Project-Details/Prescripto" element={<Prescripto/>} />
         </Routes>
       </main>
 
