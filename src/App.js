@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
 import NinjaCaseStudy from './components/Projects/Project-Details/NinjaCode'
 import MartCaseStudy from './components/Projects/Project-Details/MulMart'
+import CrownMarketCaseStudy from './components/Projects/Project-Details/CrownMarket'
 import './App.css'
 import AuthCaseStudy from './components/Projects/Project-Details/AuthApp'   
 import GreenCart from './components/Projects/Project-Details/GreenCart'   
@@ -41,8 +42,10 @@ const App = () => {
               </>
             }
           />
+          <Route path="/Project-Details/CrownMarket" element={<CrownMarketCaseStudy />} />
+          <Route path="/Project-Details/crownmarket" element={<CrownMarketCaseStudy />} />
           <Route path="/Project-Details/ninjacode" element={<NinjaCaseStudy />} />
-          <Route path="/Project-Details/MulMart" element={<MartCaseStudy />} />
+          <Route path="/Project-Details/MulMart" element={<CrownMarketCaseStudy />} />
           <Route path="/Project-Details/AuthApp" element={<AuthCaseStudy />} />
           <Route path="/Project-Details/RealEstateAppCaseStudy" element={<RealEstateCaseStudy />} />
           <Route path="/Project-Details/GreenCart" element={<GreenCart />} />

@@ -3,21 +3,21 @@ import { FaReact, FaNodeJs } from "react-icons/fa";
 import {
   SiCss3,
   SiHtml5,
-  SiTypescript,
   SiMongodb,
   SiRedux,
   SiExpress,
   SiVercel,
+  SiTailwindcss,
+  SiSocketdotio,
 } from "react-icons/si";
-import { IoLogoJavascript } from "react-icons/io5";
 
 import auth from "../Assets/auth app.png";
 import "./Projects.css";
 import { Link } from "react-router-dom";
-import cart from "../Assets/Screenshot 2025-08-30 000555.png"
-import estate from "../Assets/Screenshot 2025-08-29 214739.png"
-import prescripto from "../Assets/Screenshot 2025-08-30 163849.png"
-
+import crownMarketImg from "../Assets/crownmarket.png";
+import cart from "../Assets/Screenshot 2025-08-30 000555.png";
+import estate from "../Assets/Screenshot 2025-08-29 214739.png";
+import prescripto from "../Assets/Screenshot 2025-08-30 163849.png";
 
 function Projects() {
   return (
@@ -25,29 +25,28 @@ function Projects() {
       <h2 className="section__title about_project">Projects</h2>
 
       <div className="projects__grid">
-        {/* ----- Project 1 -----
+        {/*---------- Project 1: Crown Market ----------*/}
         <div className="project">
-          <img src={mart} alt="MulMart" />
+          <img src={crownMarketImg} alt="Crown Market" />
 
-          <h3 className="about_project">MulMart</h3>
+          <h3 className="about_project">Crown Market</h3>
 
           <ul className="project__stack">
             <li className="project__stack-item" id="stacks">
-              <SiHtml5 size={30} />
-              <IoLogoJavascript size={30} />
-              <SiCss3 size={30} />
-              <FaReact size={30} />
-              <SiRedux size={30} />
-              <SiExpress size={30} />
-              <SiMongodb size={30} />
-              <FaNodeJs size={30} />
-              <SiVercel size={30} />
+              <SiTailwindcss size={30} title="Tailwind CSS" />
+              <FaReact size={30} title="React" />
+              <SiRedux size={30} title="Redux Toolkit" />
+              <SiExpress size={30} title="Express.js" />
+              <SiMongodb size={30} title="MongoDB" />
+              <FaNodeJs size={30} title="Node.js" />
+              <SiSocketdotio size={30} title="Socket.io" />
+              <SiVercel size={30} title="Vercel" />
             </li>
           </ul>
 
           <div id="b">
             <a
-              href="https://multivendor-e-shop-frontend.vercel.app/"
+              href="https://multivender-pt6u.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -57,28 +56,25 @@ function Projects() {
             </a>
 
             <Link
-              to="/Project-Details/MulMart"
-              target="_blank"
-              rel="noopener noreferrer"
+              to="/Project-Details/CrownMarket"
+              onClick={() => window.scrollTo(0, 0)}
             >
               <span type="button" className="btn btn--outline">
                 Description
               </span>
             </Link>
           </div>
-        </div> */}
+        </div>
 
-       
-        {/*----------Project 3----------*/}
+        {/*---------- Project 2: Prescripto ----------*/}
         <div className="project">
-          <img src={prescripto} alt="NinjaCode" />
+          <img src={prescripto} alt="Prescripto" />
 
           <h3 className="about_project">Prescripto</h3>
 
           <ul className="project__stack">
             <li className="project__stack-item" id="stacks">
               <SiHtml5 size={30} />
-          
               <SiCss3 size={30} />
               <FaReact size={30} />
               <SiExpress size={30} />
@@ -99,7 +95,10 @@ function Projects() {
               </span>
             </a>
 
-            <Link to="/Project-Details/Prescripto">
+            <Link
+              to="/Project-Details/Prescripto"
+              onClick={() => window.scrollTo(0, 0)}
+            >
               <span type="button" className="btn btn--outline">
                 Description
               </span>
@@ -107,19 +106,15 @@ function Projects() {
           </div>
         </div>
 
-
-
-
-        {/*----------Project 3----------*/}
+        {/*---------- Project 3: Green Cart ----------*/}
         <div className="project">
-          <img src={cart} alt="NinjaCode" />
+          <img src={cart} alt="Green Cart" />
 
           <h3 className="about_project">Green Cart</h3>
 
           <ul className="project__stack">
             <li className="project__stack-item" id="stacks">
               <SiHtml5 size={30} />
-          
               <SiCss3 size={30} />
               <FaReact size={30} />
               <SiExpress size={30} />
@@ -140,7 +135,10 @@ function Projects() {
               </span>
             </a>
 
-            <Link to="/Project-Details/GreenCart">
+            <Link
+              to="/Project-Details/GreenCart"
+              onClick={() => window.scrollTo(0, 0)}
+            >
               <span type="button" className="btn btn--outline">
                 Description
               </span>
@@ -148,18 +146,15 @@ function Projects() {
           </div>
         </div>
 
-
-
-          {/*----------Project 2----------*/}
+        {/*---------- Project 4: Taniva Estate ----------*/}
         <div className="project">
-          <img src={estate} alt="NinjaCode" />
+          <img src={estate} alt="Taniva Estate" />
 
           <h3 className="about_project">Taniva Estate</h3>
 
           <ul className="project__stack">
             <li className="project__stack-item" id="stacks">
               <SiHtml5 size={30} />
-          
               <SiCss3 size={30} />
               <FaReact size={30} />
               <SiExpress size={30} />
@@ -180,7 +175,10 @@ function Projects() {
               </span>
             </a>
 
-            <Link to="/Project-Details/RealEstateAppCaseStudy">
+            <Link
+              to="/Project-Details/RealEstateAppCaseStudy"
+              onClick={() => window.scrollTo(0, 0)}
+            >
               <span type="button" className="btn btn--outline">
                 Description
               </span>
@@ -188,9 +186,9 @@ function Projects() {
           </div>
         </div>
 
-        {/* ----- Project 1 ----- */}
+        {/*---------- Project 5: MERN Auth App ----------*/}
         <div className="project">
-          <img src={auth} alt="Auth app" />
+          <img src={auth} alt="MERN Auth app" />
 
           <h3 className="about_project">MERN Auth App</h3>
 

@@ -39,10 +39,9 @@ function Skills  () {
         <li  className='skills__list-item btn btn--plain'>
           <SiMongodb size={80} id="color"/>
         </li>
-{/* 
-        <li  className='skills__list-item btn btn--plain'>
+        <li className='skills__list-item btn btn--plain'>
           <SiRedux size={80} id="color"/>
-        </li> */}
+        </li>
 
         <li  className='skills__list-item btn btn--plain'>
           <SiExpress size={80} id="color"/>

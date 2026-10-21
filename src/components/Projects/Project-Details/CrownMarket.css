@@ -1,0 +1,335 @@
+.crown-container {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+  padding: 2.5rem 1.5rem 4rem 1.5rem;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1f2937;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.crown-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  margin-bottom: 2rem;
+  background-color: transparent;
+}
+
+.crown-back-btn:hover {
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+  color: #111827;
+  transform: translateX(-3px);
+}
+
+.crown-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: inherit;
+  line-height: 1.2;
+}
+
+.crown-subtitle {
+  text-align: center;
+  font-size: 1.15rem;
+  color: #6b7280;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+
+.crown-hero-img-wrap {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.crown-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.crown-section {
+  margin-bottom: 3rem;
+}
+
+.crown-section h2 {
+  font-size: 1.65rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.crown-section p {
+  line-height: 1.75;
+  font-size: 1.05rem;
+  color: inherit;
+  margin-bottom: 1rem;
+}
+
+.crown-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.crown-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  background-color: #f3f4f6;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+}
+
+.crown-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.crown-card {
+  background: #ffffff;
+  padding: 1.75rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.crown-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.crown-list {
+  list-style: disc;
+  margin-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  line-height: 1.6;
+}
+
+.crown-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  margin-top: 1rem;
+}
+
+.crown-video {
+  width: 100%;
+  border-radius: 12px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  margin-top: 1rem;
+}
+
+.crown-video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.crown-table-wrapper {
+  overflow-x: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.crown-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.crown-table th {
+  background-color: #f9fafb;
+  padding: 0.85rem 1rem;
+  font-weight: 600;
+  border-bottom: 2px solid #e5e7eb;
+  color: #374151;
+}
+
+.crown-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.crown-table code {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.88rem;
+  font-family: monospace;
+}
+
+.crown-links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.crown-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #0d9488;
+  color: #ffffff !important;
+  padding: 0.75rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
+  transition: all 0.2s ease;
+}
+
+.crown-btn-primary:hover {
+  background-color: #0f766e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(13, 148, 136, 0.4);
+}
+
+.crown-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #1f2937;
+  color: #ffffff !important;
+  padding: 0.75rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(31, 41, 55, 0.2);
+  transition: all 0.2s ease;
+}
+
+.crown-btn-secondary:hover {
+  background-color: #111827;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(31, 41, 55, 0.3);
+}
+
+/* Dark Mode */
+.dark.crown-container {
+  color: #f3f4f6;
+  background-color: #111827;
+}
+
+.dark .crown-back-btn {
+  border-color: #4b5563;
+  color: #d1d5db;
+}
+
+.dark .crown-back-btn:hover {
+  background-color: #1f2937;
+  color: #ffffff;
+  border-color: #9ca3af;
+}
+
+.dark .crown-subtitle {
+  color: #9ca3af;
+}
+
+.dark .crown-section h2 {
+  border-bottom-color: #374151;
+}
+
+.dark .crown-badge {
+  background-color: #1f2937;
+  color: #d1d5db;
+  border-color: #374151;
+}
+
+.dark .crown-card {
+  background-color: #1f2937;
+  border-color: #374151;
+  color: #f3f4f6;
+}
+
+.dark .crown-img {
+  border-color: #374151;
+  background-color: #1f2937;
+}
+
+.dark .crown-table-wrapper {
+  border-color: #374151;
+}
+
+.dark .crown-table th {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  border-bottom-color: #374151;
+}
+
+.dark .crown-table td {
+  border-bottom-color: #374151;
+  color: #d1d5db;
+}
+
+.dark .crown-table code {
+  background-color: #1e293b;
+  color: #93c5fd;
+}
+
+@media screen and (max-width: 768px) {
+  .crown-container {
+    padding: 1.5rem 1rem 3rem 1rem;
+  }
+  .crown-title {
+    font-size: 1.85rem;
+  }
+  .crown-subtitle {
+    font-size: 1rem;
+  }
+  .crown-section h2 {
+    font-size: 1.35rem;
+  }
+  .crown-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .crown-links-wrapper {
+    flex-direction: column;
+  }
+  .crown-btn-primary, .crown-btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}
